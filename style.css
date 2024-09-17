@@ -6,8 +6,8 @@ body, * {
     padding: 0;
 }
 .card {
-    height: 40rem;
-    width: 30rem;
+    height: 50rem;
+    width: 40rem;
     /* if i want 3 by 3 i could do 30% */
     border: 2px solid black;
     border-radius: 3px;
@@ -16,16 +16,17 @@ body, * {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-image: url("")
+    background-size: cover;
+    background-image: url(https://i.pinimg.com/736x/60/fb/e1/60fbe11e23df93fd7e86adbaac38b2fc.jpg)
     /* could also space-evenly */
 }
 #card-img {
     width: 100%;
-    height: 45%;
+    height: 97%;
     object-fit: cover;
 }
 #card-header {
-    margin-top: 1.2rem;
+    margin-top: 3rem;
 }
 #card-price {
     margin-bottom: 1.2rem;
