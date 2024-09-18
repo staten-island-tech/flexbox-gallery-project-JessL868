@@ -7,7 +7,7 @@ body, * {
 }
 .card {
     height: 50rem;
-    width: 40rem;
+    width: 35rem;
     /* if i want 3 by 3 i could do 30% */
     border: 2px solid black;
     border-radius: 3px;
@@ -15,18 +15,23 @@ body, * {
     margin: 3rem;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    background-size: cover;
-    background-image: url(https://i.pinimg.com/736x/60/fb/e1/60fbe11e23df93fd7e86adbaac38b2fc.jpg)
+    justify-content: space-evenly;
+    background-size:cover;
+    background-image: url(https://i.pinimg.com/736x/60/fb/e1/60fbe11e23df93fd7e86adbaac38b2fc.jpg);
     /* could also space-evenly */
 }
 #card-img {
-    width: 100%;
-    height: 97%;
+    width: 150%;
+    height: 147%;
     object-fit: cover;
 }
 #card-header {
-    margin-top: 3rem;
+    margin-bottom: 30rem;
+    font-size: 4rem;
+}
+#card-header2 {
+    margin-bottom: 100rem;
+    font-size: 2rem;
 }
 #card-price {
     margin-bottom: 1.2rem;
@@ -37,4 +42,5 @@ body, * {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: row;
 }
