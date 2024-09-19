@@ -12,13 +12,28 @@ body, * {
     border: 2px solid black;
     border-radius: 3px;
     display: flex;
-    margin: 3rem;
+    margin: 0rem;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-size:cover;
     background-image: url(https://i.pinimg.com/736x/60/fb/e1/60fbe11e23df93fd7e86adbaac38b2fc.jpg);
+    
     /* could also space-evenly */
+}
+
+@media screen and (max-width: 900px) {
+    .card{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .card{
+        width: 100%;
+    }
+    .container {
+        flex-direction: column;
+    }
 }
 #card-img {
     width: 150%;
@@ -26,11 +41,11 @@ body, * {
     object-fit: cover;
 }
 #card-header {
-    margin-bottom: 30rem;
+    margin-top: 2rem;
     font-size: 4rem;
 }
 #card-header2 {
-    margin-bottom: 100rem;
+    margin-bottom: 10000rem;
     font-size: 2rem;
 }
 #card-price {
@@ -38,9 +53,9 @@ body, * {
 }
 .container {
     width: 90vw;
-    margin: 2rem auto;
+    margin: 0rem auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
 }
