@@ -19,7 +19,7 @@ body, * {
     background-size:cover;
     background-image: url();
     background-color: white;
-    padding: 40px;
+    padding: 30px;
     box-shadow:20px 10px 10px rgb(251, 208, 216);
     
     /* could also space-evenly */
@@ -37,12 +37,7 @@ body, * {
         flex-direction: row;
     }
     }
-@media screen and (min-width: 400) and (max-width:400){
-    .container{
-        flex-direction: column;
-    }
 
-}
 @media screen and (max-width: 600px) {
     .card{
         width: auto;
@@ -53,8 +48,8 @@ body, * {
     }
 }
 #card-img {
-    width: 95%;
-    height: 92%;
+    width: 92%;
+    height: 89%;
     object-fit: cover;
 }
 #card-header {
@@ -69,11 +64,31 @@ body, * {
 }
 .container {
     width: 100vw;
-    height: 100vw;
+    height: 100vW;
     margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;
 
+}
+
+a,
+a:link,
+a:visited,
+a:focus {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+img{
+    transition: all 0.3s;
+}
+
+img:hover {
+    transform: scale(1.2);
+    transform: translateY(10px);
+    transform: translateX(10px);
+    filter: drop-shadow(5px);
+    /*can do multiple transforms at once */
 }
