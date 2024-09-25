@@ -50,6 +50,7 @@ body, * {
 #card-img {
     width: 92%;
     height: 89%;
+    border-radius: 20px;
     object-fit: cover;
 }
 #card-header {
@@ -82,13 +83,48 @@ a:focus {
 }
 
 img{
+    display: block;
     transition: all 0.3s;
 }
 
 img:hover {
-    transform: scale(1.2);
-    transform: translateY(10px);
-    transform: translateX(10px);
-    filter: drop-shadow(5px);
+    transform: scale(1) translateY(-10px) translateX(-10px) rotate(5deg); 
+    filter: drop-shadow(7px 7px 0px rgb(0,0,0,.5));
     /*can do multiple transforms at once */
+}
+
+.animation {
+    border-radius: 20px;
+    height: 2rem;
+    width: 2rem;
+    animation: demo 5s infinite;
+    position: absolute;
+}
+
+@keyframes demo {
+    0% {
+        left: 50%;
+        bottom: 10%;
+        background-color: red;
+    }
+    25% {
+        left: 20%;
+        bottom: 50%;
+        background-color: white;
+    }
+    50% {
+        left: 80%;
+        bottom: 20%;
+        background-color: pink;
+    }
+    75% {
+        left: 10%;
+        bottom: 20%;
+        background-color:rgb(251, 208, 216);
+    }
+    100% {
+        left: 60%;
+        bottom: 90%;
+        background-color: purple;
+    }
 }
